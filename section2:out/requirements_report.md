@@ -1,0 +1,5 @@
+During the training process, we utilized 2D images extracted from the 3D volume as input by slicing the axial plane. This allowed us to focus on the region of interest at the coronal and sagittal planes. By doing so, we were able to significantly reduce the dimensionality of the input and expedite the computation, especially when utilizing a GPU. As a result, a GPU-accelerated training process proved to be much faster and more efficient.
+
+To ensure efficient memory usage, we employed cropping techniques to extract the region of interest from the images. This helped to reduce the size of the input volumes, making it feasible to store the model parameters within a memory capacity of 400MB.
+
+German cancer reseearch center Unet model architecture was used for tranining process. More convolutional layers with maxpooling layers and dropout layers could improve the efficiency of the model
